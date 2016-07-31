@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1411172848 source:e:\embedded\esf\x0\main.c
+	<windows.h>
+	<stdio.h>
+	<stdlib.h>
+
+1411176448 source:e:\embeddedfab\xo project\main.c
+	<windows.h>
+	<stdio.h>
+	<stdlib.h>
+
