@@ -1,6 +1,9 @@
 #include<windows.h>
 #include<stdio.h>
 #include<stdlib.h>
+#define ESC 27   //ASCII value of 
+
+
  int digits[9] = {0,0,0,0,0,0,0,0,0};
  char xo;
  int numb=0;
@@ -171,7 +174,8 @@ int ply1;
     check(ply1);
     win();
     drw();
-    play2();}
+
+    }
 
 void play2(){
         int ply2;
@@ -181,7 +185,7 @@ void play2(){
     check(ply2);
     win();
      drw();
-        play1();
+
 
 }
 void drw()
@@ -195,6 +199,10 @@ void drw()
 int main()
 {
     draw_board();
-    play1();
+    while(1)
+    {
+        play1();
+        play2();
+    }
     return 0;
 }
